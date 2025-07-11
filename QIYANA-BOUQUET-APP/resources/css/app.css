@@ -1,0 +1,224 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body.homepage * {
+    @apply font-dm;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-quicksand;
+  }
+
+  p, span, label, input, button {
+    @apply font-inter;
+  }
+}
+
+[x-cloak] {
+  display: none;
+}
+
+.custom-vertical-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.custom-vertical-scrollbar::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+.custom-vertical-scrollbar::-webkit-scrollbar-thumb {
+  background: #e4e4e4;
+  background: #fff;
+  border-radius: 50px;
+}
+
+.custom-vertical-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #c1c1c1 !important;
+}
+
+.custom-vertical-scrollbar:hover::-webkit-scrollbar-thumb {
+  background: #e4e4e4;
+}
+
+.custom-vertical-scrollbar-horizontal::-webkit-scrollbar {
+  height: 6px;
+}
+
+/* DATATABLES */
+.dataTable {
+  padding-top: 1rem;
+}
+.dataTables_info,
+.dataTables_paginate {
+  margin-top: 1rem;
+}
+
+.dataTables_info, .dataTables_length {
+  float: left;
+}
+
+.dataTables_paginate, .dataTables_filter {
+  float: right;
+}
+
+.dataTables_length,
+.dataTables_filter,
+.dataTables_info,
+.dataTables_paginate {
+  font-size: 0.8em;
+  padding: 1rem 0;
+}
+
+.dataTables_length,
+.dataTables_filter {
+  margin-top: 2rem;
+}
+
+.dataTables_length select,
+.dataTables_filter select {
+  font-size: 1em;
+  margin-right: 0.7rem !important;
+  border-radius: 0.3rem;
+  padding: 0.2rem 1rem;
+  border: 1px solid #ddd;
+}
+.dataTables_length select,
+.dataTables_filter input {
+  font-size: 1em;
+  margin-left: 0.7rem !important;
+  border-radius: 0.3rem;
+  padding: 0.2rem 0.5rem;
+  border: 1px solid #ddd;
+}
+.dataTables_length select {
+  padding-left: 0.5rem;
+  width: 70px;
+}
+
+.dataTable thead {
+  background-color: rgb(241, 241, 241);
+}
+
+table.dataTable thead th {
+  padding: 0.8rem 1rem !important;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.dataTable thead th:first-child {
+  border-top-left-radius: 0.2rem;
+}
+
+.dataTable thead th:last-child {
+  border-top-right-radius: 0.2rem;
+}
+
+.dataTable thead th {
+  font-size: 0.7em;
+  color: #5c5d5e;
+  text-transform: uppercase;
+}
+
+.dtr-details {
+  border-radius: 0.25rem;
+  margin-bottom: 0.5rem !important;
+  border: 1px solid rgb(238, 238, 238);
+  width: 100%;
+}
+
+.dtr-details li {
+  padding: 0.7rem 1rem !important;
+  border-bottom-color: rgb(238, 238, 238) !important;
+}
+
+table.dataTable tbody td {
+  padding: 0.7rem 1rem !important;
+  text-align: left;
+  white-space: nowrap;
+  font-size: 13.5px;
+}
+
+.dataTable tbody td {
+  font-size: 0.9em;
+}
+
+.dataTable * .sorting_1 {
+  padding-left: 2rem !important;
+}
+.dataTable * .sorting_1::before {
+  margin-top: 0.2rem;
+}
+
+.dataTable tbody tr.odd {
+  background-color: #fafafa;
+}
+
+.dataTable tbody tr.even {
+  background-color: #fff;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.next,
+.dataTables_wrapper .dataTables_paginate .paginate_button.previous {
+  margin-left: 0.5rem;
+  background: #3b81f6 !important;
+  color: #fff !important;
+  transition: all 300ms ease;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.next.disabled,
+.dataTables_wrapper .dataTables_paginate .paginate_button.previous.disabled {
+  margin-left: 0.5rem;
+  background: #ddd !important;
+  color: #565656 !important;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.previous {
+  margin-right: 0.5rem;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+  font-weight: 500;
+  border-radius: 0.25rem;
+  border: none !important;
+  transition: all 300ms ease;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.disabled:hover,
+.dataTables_wrapper .dataTables_paginate .paginate_button.disabled:hover {
+  background: #ddd !important;
+  cursor: not-allowed;
+}
+
+/*Pagination Buttons - Current selected */
+.dataTables_wrapper .dataTables_paginate .paginate_button.current {
+  background: #3b81f6 !important;
+  color: #fff !important;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+  box-shadow: none !important;
+  font-weight: 500;
+  border-radius: 0.25rem;
+  background: #ddd;
+  border: none !important;
+  color: #fff !important;
+}
+
+/*Pagination Buttons - Hover */
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+  color: #fff !important;
+  box-shadow: none !important;
+  border-radius: 0.25rem;
+  border: none !important;
+  padding: 10px;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+  box-shadow: none !important;
+  border-radius: 0.25rem;
+  background: #0e56d2 !important;
+  border: none !important;
+  color: #fff !important;
+}
